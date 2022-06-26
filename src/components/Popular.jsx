@@ -13,7 +13,6 @@ function Popular() {
 
     useEffect(() => {
         getPopular();
-
     },[]);
 
     const getPopular = async() => {
@@ -36,8 +35,8 @@ function Popular() {
         <h3>Popular Picks</h3>
     <Splide options={{
      perPage: 4,
-     arrows: false,
-     pagination:false,
+    //  arrows: false,
+    //  pagination:false,
      drag: 'free',
      gap: '5rem',
  }}>
@@ -70,6 +69,7 @@ const Card = styled.div`
     border-radius: 2rem;
     overflow: hidden;
     position: relative;
+
     
     img {
         border-radius: 2rem;
@@ -90,11 +90,12 @@ const Card = styled.div`
         width: 100%;
         text-align: center;
         font-weight: 600;
-        font-size: 1rem;
+        font-size: 1.2rem;
         height: 40%;
         display: flex;
         justify-content: center;
         align-items:center;
+
     }
 `;
 
@@ -103,7 +104,7 @@ const Gradient = styled.div`
     position: absolute;
     width: 100%;
     height:100%;
-    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5))
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.6))
 `
 
 export default Popular

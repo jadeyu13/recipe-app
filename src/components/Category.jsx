@@ -46,25 +46,26 @@ border-radius: 50%;
 margin-right: 2rem;
 text-decoration: none;
 background: linear-gradient(35deg, #494949, #313131);
-width:6rem;
-height:6rem;
+width:9rem;
+height:9rem;
 cursor: pointer;
 transform: scale(.8);
 
 h4{
     color: white;
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
 svg{
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 &.active{
-    background: linear-gradient(to right, #fa721e, #e54258);
+    background: linear-gradient(to right, #fa721e, #ed364f);
 svg{
     color:white;
+   
 }
 h4{
     color: white;

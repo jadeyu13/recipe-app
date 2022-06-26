@@ -13,10 +13,10 @@ function Pages() {
   return (
    <AnimatePresence exitBeforeEnter>
     <Routes key={location.pathname} location={location} >
-        <Route path='/' exact element={<Home />} />
-        <Route path='/cuisine/:type' elements={<Cuisine />} />
-        <Route path='/searched/:search' elements={<Searched />} />
-        <Route path='/recipe/:name' elements={<Recipe />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/cuisine/:type' element={<Cuisine />} />
+        <Route path='/searched/:search' element={<Searched />} />
+        <Route path='/recipe/:name' element={<Recipe />} />
     </Routes>
     </AnimatePresence>
    

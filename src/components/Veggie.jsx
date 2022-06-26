@@ -36,8 +36,8 @@ function Veggie() {
         <h3>Vegetarian Picks</h3>
     <Splide options={{
      perPage: 3,
-     arrows: false,
-     pagination:false,
+     
+    //  pagination:false,
      drag: 'free',
      gap: '5rem',
  }}>
@@ -90,7 +90,7 @@ const Card = styled.div`
         width: 100%;
         text-align: center;
         font-weight: 600;
-        font-size: 1rem;
+        font-size: 1.2rem;
         height: 40%;
         display: flex;
         justify-content: center;
