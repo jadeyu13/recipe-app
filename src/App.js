@@ -24,7 +24,7 @@ function App() {
 
 const Logo = styled(Link)`
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 400;
   font-family: 'Lobster Two', cursive;
 `;
@@ -35,7 +35,8 @@ const Nav = styled.div`
   justify-content: start;
   align-items: center;
   svg {
-    font-size: 2rem;
+    font-size: 3rem;
+    margin-right: 1rem;
   }
 `;
 

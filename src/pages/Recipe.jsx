@@ -26,7 +26,7 @@ function Recipe() {
     <DetailWrapper>
       <div>
         <h2>{details.title}</h2>
-        <img scr={details.image} alt="" />
+        <img src={details.image} alt="" />
       </div>
       <Info>
         <Button
@@ -44,15 +44,15 @@ function Recipe() {
         {activeTap === 'instructions' && (
           <div>
             <h3 dangerouslySetInnerHTML={{ __html: details.summary }}></h3>
-            <h3 dangerouslySetInnerHTML={{ __html: details.instructions }}></h3>
+            <h3 dangerouslySetInnerHTML={{ __html: details.instructions}}></h3>
           </div>
         )}
 
         {activeTap === 'ingredients' && (
           <ul>
-            {details.extendedIngredients.map((ingredient) => {
-              <li key={ingredient.id}>{ingredient.oginal}</li>;
-            })}
+            {details.extendedIngredients.map((ingredient) => (
+              <li key={ingredient.id}>{ingredient.original}</li>
+            ))}
           </ul>
         )};
       </Info>
@@ -81,7 +81,7 @@ const DetailWrapper = styled.div`
 `;
 
 const Button = styled.button`
-  padding: 1rem 20rem;
+  padding: 1rem 2rem;
   color: #313131;
   background: white;
   border: 2px solid black;

@@ -30,8 +30,6 @@ function Searched() {
             <h4>{item.title}</h4>
             </Link>
           </Card>
-           
-            
         );
       })}
     </Grid>
